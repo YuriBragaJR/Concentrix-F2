@@ -95,7 +95,7 @@ ol {
     color: var(--primary);
 }
 
-border
+
 .footer-off {
     background: var(--dark);
 }
@@ -176,7 +176,7 @@ border
 
 /* Footer */
 footer {
-    background-color: var(--dark);
+    background-color: var(--);
     color: var(--light);
 }
 
