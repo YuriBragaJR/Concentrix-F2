@@ -1,6 +1,6 @@
 /* Paleta de cores */
 :root {
-    --primary:  #71b128;
+    --primary: #71b128;
     --secondary: #26497D;
     --support1: #95EA34;
     --suport2: #26497D;
@@ -233,7 +233,7 @@ footer {
 }
 
 @media (min-width: 1400px) {
-        .hero-msg {
+    .hero-msg {
         transform: translateX(-440px);
         width: 750px;
         height: 540px;
@@ -244,9 +244,11 @@ footer {
     .fs-60 {
         font-size: 80px;
     }
+
     .fs-30 {
         font-size: 40px;
     }
+
     .fs-20 {
         font-size: 30px;
     }
@@ -263,7 +265,17 @@ footer {
     }
 
     .bg-section {
-    background: #131e2ed7;
-    height: 1200px;
+        background: #131e2ed7;
+        height: 1200px;
+    }
 }
+
+@media (max-width: 430px) {
+        .img-hero {
+        background-image: url(../images/hero-bg-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55vh;
+    }
 }
