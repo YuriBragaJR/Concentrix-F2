@@ -127,9 +127,7 @@ ol {
     padding: 100px 0;
 }
 
-.athlete-hero {
-    padding-bottom: 40px;
-}
+
 
 /* Cards */
 .sport-card,
@@ -166,7 +164,6 @@ ol {
     background-color: var(--support1);
     border: none;
     padding: 10px 25px;
-
     transition: background-color 0.3s ease;
 }
 
@@ -182,7 +179,6 @@ ol {
 
 /* Footer */
 footer {
-    background-color: var(--);
     color: var(--light);
 }
 
@@ -211,13 +207,13 @@ footer {
 }
 
 
-#menu-atletas {
+.menu-atletas {
     display: none;
 }
 
 #quem-somos {
-    height: 100vh;
     align-content: center;
+    margin-top: ;
 }
 
 
@@ -249,7 +245,7 @@ footer {
     }
 
     .icones {
-        transform: translateY(-80px);
+        transform: translateY(-50px);
     }
 
     
@@ -317,6 +313,10 @@ footer {
     .fonte-nav {
         color: var(--dark);
         font-weight: 600;
+    }
+
+    .i01 {
+        display: none;
     }
 
 }
