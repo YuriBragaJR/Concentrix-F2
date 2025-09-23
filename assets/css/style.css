@@ -1,10 +1,10 @@
 /* Paleta de cores */
 :root {
     --primary: #71b128;
-    --secondary: #26497D;
-    --support1: #95EA34;
+    --secondary: #042961;
+    --support1: #95ea34f6;
     --suport2: #26497D;
-    --dark: #151E2F;
+    --dark: #08132b;
     --light: #F7FAFC;
 }
 
@@ -75,12 +75,18 @@ ol {
     color: #2A374A;
 }
 
-.borda {
-    border: 1px solid #ffffff;
+.no-border {
+    border: none;
 }
 
 .hero {
     height: 100vh;
+    color: var(--support1);
+}
+
+.fonte-nav {
+    color: var(--light);
+    font-weight: 600;
 }
 
 
@@ -102,7 +108,7 @@ ol {
 
 
 .img-hero {
-    background-image: url(../images/hero-bg-2.jpg);
+    background-image: url(../images/hero-bg-alt2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,8 +116,8 @@ ol {
 }
 
 .btn-hero {
-    background: var(--primary);
-    border: none;
+    background: var(--support1);
+
 }
 
 /* Hero Section */
@@ -157,7 +163,7 @@ ol {
 
 /* Botões */
 .btn-primary {
-    background-color: var(--primary);
+    background-color: var(--support1);
     border: none;
     padding: 10px 25px;
     border-radius: 6px;
@@ -210,7 +216,7 @@ footer {
 
 @media (min-width: 992px) {
     .img-hero {
-        background-image: url(../images/hero-bg-2.jpg);
+        background-image: url(../images/hero-bg-alt2.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -223,7 +229,8 @@ footer {
         transform: translateX(-360px);
         width: 580px;
         border-radius: 0.2rem;
-        background-color: #172438f6;
+        background-color: #172438d5;
+
     }
 
     .icone-rs {
@@ -239,6 +246,7 @@ footer {
         height: 540px;
         border-radius: 0.2rem;
         background-color: #131e2ed7;
+
     }
 
     .fs-60 {
@@ -268,6 +276,13 @@ footer {
         background: #131e2ed7;
         height: 1200px;
     }
+
+    .fonte-nav {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+
 }
 
 @media (max-width: 430px) {
