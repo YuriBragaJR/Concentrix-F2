@@ -79,6 +79,10 @@ ol {
     border: none;
 }
 
+.logo-header {
+    height: 5em;
+}
+
 .hero {
     height: 100vh;
     color: var(--support1);
@@ -269,6 +273,8 @@ footer {
     transform: scaleX(1);
 }
 
+
+
 }
 
 @media (min-width: 1400px) {
@@ -317,6 +323,10 @@ footer {
     .i01 {
         display: none;
     }
+
+    .logo-header {
+    height: 55px;
+}
 
 }
 
