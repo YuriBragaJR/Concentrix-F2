@@ -83,7 +83,9 @@ ol {
     letter-spacing: 0;
 }
 
-
+.logo-header {
+    height: 4rem;
+}
 
 .athlete-hero {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -176,7 +178,7 @@ footer {
     text-overflow: ellipsis;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .icone-rs {
         display: none;
     }
@@ -235,4 +237,4 @@ footer {
 .u-fx:hover::after {
     transform: scaleX(1);
 }
-}
+} */
