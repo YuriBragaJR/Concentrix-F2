@@ -271,7 +271,6 @@ footer {
 
 .u-fx:hover::after {
     transform: scaleX(1);
-}
 
 
 
@@ -339,4 +338,5 @@ footer {
         background-size: cover;
         height: 55vh;
     }
+}
 }
