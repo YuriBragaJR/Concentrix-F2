@@ -7,11 +7,12 @@
     --dark: #08132b;
     --light: #F7FAFC;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -85,6 +86,10 @@ ol {
 
 .logo-header {
     height: 4rem;
+}
+
+.logo-footer {
+    height: 6rem;
 }
 
 .athlete-hero {
