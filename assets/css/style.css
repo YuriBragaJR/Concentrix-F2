@@ -80,7 +80,7 @@ ol {
 }
 
 .logo-header {
-    height: 5em;
+    height: 4rem;
 }
 
 .hero {
@@ -273,7 +273,7 @@ footer {
     transform: scaleX(1);
 
 
-
+}
 }
 
 @media (min-width: 1400px) {
@@ -300,6 +300,7 @@ footer {
 }
 
 @media (max-width: 992px) {
+
     .icone-rs {
         display: none;
     }
@@ -338,5 +339,4 @@ footer {
         background-size: cover;
         height: 55vh;
     }
-}
 }
