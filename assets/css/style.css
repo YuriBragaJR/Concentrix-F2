@@ -87,7 +87,7 @@ ol {
 }
 
 .hero {
-    height: 55vh;
+    height: 70vh;
     background: var(--cor4);
 }
 
@@ -159,12 +159,15 @@ ol {
 
 /* Hero Section Pagina Atletas*/
 .athlete-hero {
-    background: linear-gradient(90deg, var(--cor5) 0% 0%, var(--cor4) 90%);
+    background: linear-gradient(90deg, var(--cor6) 0% 0%, var(--cor5) 90%);
     color: var(--light);
     padding: 100px 0;
+    color: var(--cor3);
 }
 
-
+.bg-span {
+    background-color: var(--cor5);
+}
 
 /* Cards */
 .sport-card,
