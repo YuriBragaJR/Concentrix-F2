@@ -1,73 +1,14 @@
-@media (min-width: 992px) {
-    .img-hero {
-        background-image: url(../images/hero-bg-alt2.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-
-
-    }
-
-    .hero-msg {
-        transform: translateX(-360px);
-        width: 580px;
-        border-radius: 0.2rem;
-        background-color: #172438d5;
-
-    }
-
-    .icones {
-        transform: translateY(-50px);
-    }
-
-
-    .u-fx {
-        position: relative;
-        text-decoration: none;
-    }
-
-    .u-fx::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 100%;
-        height: 2px;
-        background-color: var(--support1);
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-    }
-
-    .u-fx:hover::after {
-        transform: scaleX(1);
-
-
-    }
+/* Paleta de cores */
+:root {
+    --cor1: #d6d6d6;
+    --cor2: #121212;
+    --cor3: #f7fafc;
+    --cor4: #1a265a;
+    --cor5: #f1600d;
+    --cor6: #50a5b1;
+    --cor7: #50a6b1a4;
 }
 
-@media (min-width: 1400px) {
-    .hero-msg {
-        transform: translateX(-440px);
-        width: 750px;
-        height: 540px;
-        border-radius: 0.2rem;
-        background-color: #131e2ed7;
-
-    }
-
-    .fs-60 {
-        font-size: 80px;
-    }
-
-    .fs-30 {
-        font-size: 40px;
-    }
-
-    .fs-20 {
-        font-size: 30px;
-    }
-}
 
 @media (max-width: 992px) {
 
@@ -75,18 +16,8 @@
         display: none;
     }
 
-    html,
-    body {
-        background: #172233;
-    }
-
-    .bg-section {
-        background: #131e2ed7;
-        height: 1200px;
-    }
-
     .fonte-nav {
-        color: var(--dark);
+        color: var(--cor2);
         font-weight: 600;
     }
 
@@ -98,15 +29,31 @@
         height: 55px;
     }
 
-}
-
-
-@media (max-width: 430px) {
-    .img-hero {
-        background-image: url(../images/hero-bg-alt2.jpg);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 55vh;
+    .u-fx::after {
+        display: none;
     }
+
+        .sm-remove {
+        display: none;
+    }
+
+    .hero-msg {
+
+
+    background-color: var(--cor6);
+
 }
+
+
+}
+
+@media (min-width: 992px) {
+        .hero-msg {
+            transform: translateY(-120%);
+    }
+
+
+}
+
+
+

@@ -24,130 +24,106 @@
 <body>
     <div id="topo"></div>
 
-    <section class="row hero bg-section">
-        <div class="col-lg-9">
-            <div class="img-hero">
+    <!-- Barra de navegação mesclada com menu offcanva do Bootstrap transformando o menu "collapse" em um menu surgindo da lateral direita -->
+    <header class="bg-nav">
+        <nav class="navbar navbar-expand-lg fonte-nav ps-5" data-bs-theme="dark">
+            <div class="container-fluid ms-lg-3">
+                <a class="navbar-brand" href="#"><img class="logo-header" src="./assets/images/logo5.png"
+                        alt="Logo Athenos Sport"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end  bg-light" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel" data-bs-theme="dark">
+                    <div class="offcanvas-header footer-off">
+                        <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body me-lg-auto ps-5 ">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link fonte-nav u-fx" href="./assets/pages/lista-atletas.html">Atletas</a>
+                            </li>
+                            <hr class="d-lg-none hr-menuoff">
+                            <li class="nav-item ms-lg-2">
+                                <a class="nav-link fonte-nav u-fx" href="#esportes">Esportes</a>
+                            </li>
+                            <hr class="d-lg-none hr-menuoff">
+                            <li class="nav-item ms-lg-2">
+                                <a class="nav-link fonte-nav u-fx" href="#quem-somos">Sobre</a>
+                            </li>
+                            <hr class="d-lg-none hr-menuoff">
+                            <li class="nav-item ms-lg-2">
+                                <a class="nav-link fonte-nav u-fx" href="#contato">Contato</a>
+                            </li>
+                            <hr class="d-lg-none hr-menuoff">
+                            <li class="nav-item ms-lg-5">
+                                <a class="nav-link fonte-nav u-fx" href="#">Login</a>
+                            </li>
+                            <hr class="d-lg-none hr-menuoff">
+                            <li class="nav-item ms-lg-2">
+                                <a class="nav-link fonte-nav u-fx" href="#">Área do Atleta</a>
+                            </li>
+                            <hr class="d-lg-none hr-menuoff">
+                        </ul>
+                    </div>
 
-                <!-- Barra de navegação mesclada com menu offcanva do Bootstrap transformando o menu "collapse" em um menu surgindo da lateral direita -->
-                <header>
-                    <nav class="navbar navbar-expand-lg fonte-nav" data-bs-theme="dark">
-                        <div class="container-fluid ms-lg-3">
-                            <a class="navbar-brand" href="#"><img class="logo-header" src="./assets/images/logo4.png"
-                                    alt="Logo Athenos Sport"></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="offcanvas offcanvas-end  bg-light" tabindex="-1" id="offcanvasRight"
-                                aria-labelledby="offcanvasRightLabel" data-bs-theme="dark">
-                                <div class="offcanvas-header footer-off">
-                                    <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Menu</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body ms-lg-auto ">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item">
-                                            <a class="nav-link fonte-nav u-fx"
-                                                href="./assets/pages/lista-atletas.html">Atletas</a>
-                                        </li>
-                                        <hr class="d-lg-none hr-menuoff">
-                                        <li class="nav-item ms-lg-2">
-                                            <a class="nav-link fonte-nav u-fx" href="#esportes">Esportes</a>
-                                        </li>
-                                        <hr class="d-lg-none hr-menuoff">
-                                        <li class="nav-item ms-lg-2">
-                                            <a class="nav-link fonte-nav u-fx" href="#quem-somos">Sobre</a>
-                                        </li>
-                                        <hr class="d-lg-none hr-menuoff">
-                                        <li class="nav-item ms-lg-2">
-                                            <a class="nav-link fonte-nav u-fx" href="#contato">Contato</a>
-                                        </li>
-                                        <hr class="d-lg-none hr-menuoff">
-                                        <li class="nav-item ms-lg-5">
-                                            <a class="nav-link fonte-nav u-fx" href="#">Login</a>
-                                        </li>
-                                        <hr class="d-lg-none hr-menuoff">
-                                        <li class="nav-item ms-lg-2">
-                                            <a class="nav-link fonte-nav u-fx" href="#">Área do Atleta</a>
-                                        </li>
-                                        <hr class="d-lg-none hr-menuoff">
-                                    </ul>
-                                </div>
+                    <!-- footer no menu lateral -->
+                    <div class="text-center p-2 d-lg-none pb-3 footer-off">
+                        <div class="icon-sociais fs-3" aria-label="Links para redes sociais">
 
-                                <!-- footer no menu lateral -->
-                                <div class="text-center p-2 d-lg-none pb-3 footer-off">
-                                    <div class="icon-sociais fs-3" aria-label="Links para redes sociais">
-
-                                        <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
-                                            <i class="bi bi-facebook fs-4"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
-                                            <i class="bi bi-instagram fs-4"></i>
-                                        </a>
-                                        <a href="https://twitter.com" target="_blank" class="text-white me-3">
-                                            <i class="bi bi-twitter-x fs-4"></i>
-                                        </a>
-                                        <a href="https://www.youtube.com" target="_blank" class="text-white">
-                                            <i class="bi bi-youtube fs-4"></i>
-                                        </a>
+                            <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+                                <i class="bi bi-facebook fs-4"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
+                                <i class="bi bi-instagram fs-4"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="text-white me-3">
+                                <i class="bi bi-twitter-x fs-4"></i>
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" class="text-white">
+                                <i class="bi bi-youtube fs-4"></i>
+                            </a>
 
 
-                                    </div>
-                                    <div class="d-flex justify-content-center p-3">
-                                        <img src="./assets/images/logo4.png" alt="" class="img-fluid"
-                                            style="width: 150px;">
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
-                    </nav>
-                </header>
-            </div>
-        </div>
+                        <div class="d-flex justify-content-center p-3">
+                            <img src="./assets/images/logo4.png" alt="" class="img-fluid" style="width: 150px;">
+                        </div>
 
-        <div class="col-lg-3 align-content-center p-lg-5">
-            <div class="container text-center align-content-center  p-lg-4 hero-msg">
-                <p class="bebas fs-2">Dê <strong>Visibilidade</strong> aos</p>
-                <h1 class="mb-4 fw-bold bebas fs-60">ESPORTES ESQUECIDOS</h1>
-                <p class="mb-4 fs-30 bebas ">Conheça e apoie <strong>atletas</strong> e <strong>treinadores</strong> de
-                    modalidades que não recebem a
-                    atenção
-                    que merecem.</p>
-                <a href="#esportes" class="btn btn-light btn-lg me-2 rounded-1 bebas fs-20 no-border">Explorar
-                    Esportes</a>
-                <a href="./assets/pages/lista-atletas.html"
-                    class="btn btn-light btn-lg me-2 rounded-1 btn-hero bebas fs-20 no-border">Conhecer
-                    Atletas</a>
+                    </div>
+                </div>
             </div>
+        </nav>
+    </header>
+    </div>
+    </div>
+
+    <section class="row hero">
+        <div class="col-0 col-lg-2 sm-remove">
         </div>
-        <div class="row">
-            <div class="col-lg-9"></div>
-            <div class=" icones col-lg-3 text-center i01">
-<a href="https://www.facebook.com" target="_blank" class="social-icon me-md-4 me-xl-5 ms-lg-4">
-  <i class="bi bi-facebook"></i>
-</a>
-<a href="https://www.instagram.com" target="_blank" class="social-icon me-md-4 me-xl-5">
-  <i class="bi bi-instagram"></i>
-</a>
-<a href="https://twitter.com" target="_blank" class="social-icon me-md-4 me-xl-5">
-  <i class="bi bi-twitter-x"></i>
-</a>
-<a href="https://www.youtube.com" target="_blank" class="social-icon">
-  <i class="bi bi-youtube"></i>
-</a>
-            </div>
-        </div>
+        <div class="col-12 col-lg-9 img-hero">
         </div>
     </section>
 
-    <article class="bg-white">
-
+    <div class="p-lg-5">
+        <div class="col-lg-4 hero-msg align-content-center p-4">
+        <p class="fs-2">Dê <strong>Visibilidade</strong> aos</p>
+        <h1 class=" fw-bold text-hero">ESPORTES ESQUECIDOS</h1>
+        <p class=" fs-3">Conheça e apoie <strong>atletas</strong> e
+            <strong>treinadores</strong> de
+            modalidades que não recebem a
+            atenção
+            que merecem.
+        </p>
+        <a href="#esportes" class="btn btn-light btn-lg me-2 rounded-1 no-border">Explorar
+            Esportes</a>
+    </div>
+    </div>
 
         <!-- Sports Section -->
-        <section id="esportes" class="py-5">
+        <section id="esportes">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="fw-bold">Esportes que merecem destaque</h2>
@@ -164,7 +140,7 @@
                                 <h5 class="card-title">Capoeira</h5>
                                 <p class="card-text line-limit">Arte marcial brasileira que combina elementos de dança,
                                     acrobacias e música, muitas vezes marginalizada como esporte.</p>
-                                <a href="#" class="btn btn-primary mt-3 text-black fw-medium">Saiba mais</a>
+                                <a href="#" class="btn btn-primary mt-3  fw-medium">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -178,7 +154,7 @@
                                 <h5 class="card-title">Rugby Feminino</h5>
                                 <p class="card-text line-limit">Modalidade que cresce mundialmente, mas ainda enfrenta
                                     desafios de visibilidade e investimento no cenário esportivo.</p>
-                                <a href="#" class="btn btn-primary mt-3 text-black fw-medium">Saiba mais</a>
+                                <a href="#" class="btn btn-primary mt-3  fw-medium">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +169,7 @@
                                 <p class="card-text line-limit">Esporte adaptado para atletas com graves
                                     comprometimentos
                                     motores, que merece mais reconhecimento e apoio.</p>
-                                <a href="#" class="btn btn-primary mt-3 text-black fw-medium">Saiba mais</a>
+                                <a href="#" class="btn btn-primary mt-3  fw-medium">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +183,7 @@
                                 <p class="card-text line-limit">Esporte criado especificamente para deficientes visuais,
                                     com
                                     bola que emite sons para orientar os jogadores.</p>
-                                <a href="#" class="btn btn-primary mt-3 text-black fw-medium">Saiba mais</a>
+                                <a href="#" class="btn btn-primary mt-3  fw-medium">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -222,7 +198,7 @@
                                 <p class="card-text line-limit">Popular em alguns países, mas pouco divulgado na maioria
                                     das
                                     nações, incluindo o Brasil.</p>
-                                <a href="#" class="btn btn-primary mt-3 text-black fw-medium">Saiba mais</a>
+                                <a href="#" class="btn btn-primary mt-3  fw-medium">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -235,7 +211,7 @@
                                 <h5 class="card-title">Badminton</h5>
                                 <p class="card-text line-limit">Esporte olímpico dinâmico e acessível, mas que raramente
                                     recebe cobertura midiática.</p>
-                                <a href="#" class="btn btn-primary mt-3 text-black fw-medium">Saiba mais</a>
+                                <a href="#" class="btn btn-primary mt-3  fw-medium">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -244,20 +220,17 @@
         </section>
 
         <!-- Call to Action -->
-        <section class="py-5 bg-white">
+        <section class="bg-cta spacing align-content-center">
             <div class="container text-center py-5">
                 <h2 class="fw-bold mb-4">Vamos mudar essa realidade</h2>
                 <p class="lead mb-5">Apoie atletas e esportes que precisam de visibilidade para crescer e inspirar mais
                     pessoas.</p>
                 <a href="./assets/pages/lista-atletas.html"
-                    class="btn btn-primary btn-lg px-4 me-2  text-black fw-medium mb-4 mb-lg-0 col-7 col-lg-4">Conheça
+                    class="btn  btn-lg px-4 fw-medium col-7 col-lg-4">Conheça
                     nossos
                     atletas</a>
-                <a href="#" class="btn btn-outline-dark btn-lg px-4 col-7 col-lg-3">Seja um apoiador</a>
             </div>
         </section>
-        <hr>
-        <br><br>
 
         <section class="py-5 my-5 bg-light" id="quem-somos">
             <div class="container">
@@ -281,7 +254,7 @@
                             do vôlei.</p>
                         <p class="mb-3">Mais do que um site, somos um movimento por reconhecimento, respeito e
                             representatividade.</p>
-                        <a href="#contato" class="btn btn-primary mt-3  text-black fw-medium">Fale com a gente</a>
+                        <a href="#contato" class="btn btn-primary mt-3   fw-medium">Fale com a gente</a>
                     </div>
                 </div>
             </div>
@@ -296,7 +269,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <a class="navbar-brand" href="#"><img class="logo-footer" src="./assets/images/logo4.png"
+                    <a class="navbar-brand" href="#"><img class="logo-footer" src="./assets/images/logo5.png"
                             alt="Logo Athenos Sport"></a>
                     <p class="mt-3">Plataforma dedicada te conectar com esportes e atletas que não recebem a atenção
                         merecida da
@@ -320,28 +293,23 @@
                 <div class="col-lg-3 mb-4">
                     <h5 class="fw-bold mb-4">Redes Sociais</h5>
                     <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
-                        <i class="bi bi-facebook fs-4"></i>
+                        <i class="bi bi-facebook fs-4 social-icon"></i>
                     </a>
                     <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
-                        <i class="bi bi-instagram fs-4"></i>
+                        <i class="bi bi-instagram fs-4 social-icon"></i>
                     </a>
                     <a href="https://twitter.com" target="_blank" class="text-white me-3">
-                        <i class="bi bi-twitter-x fs-4"></i>
+                        <i class="bi bi-twitter-x fs-4 social-icon"></i>
                     </a>
                     <a href="https://www.youtube.com" target="_blank" class="text-white">
-                        <i class="bi bi-youtube fs-4"></i>
+                        <i class="bi bi-youtube fs-4 social-icon"></i>
                     </a>
                 </div>
             </div>
             <hr class="my-4 bg-light">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
+                <div class="col-md-12 text-center">
                     <p class="mb-0">&copy; 2025 Athenos Sports. Todos os direitos reservados.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Projeto Enterprise Challenge - Concentrix & Google</p>
-                </div>
-            </div>
         </div>
     </footer>
 
