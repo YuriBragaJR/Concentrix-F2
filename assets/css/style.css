@@ -23,19 +23,6 @@ body {
     background: var(--cor3);
 }
 
-.fs-60 {
-    font-size: 60px;
-}
-
-.fs-30 {
-    font-size: 30px;
-}
-
-.fs-20 {
-    font-size: 20px;
-    letter-spacing: 0;
-}
-
 img,
 picture,
 video,
@@ -69,6 +56,7 @@ ol {
 .hr-menuoff {
     color: var(--cor5);
 }
+
 
 .bg-nav {
     background: var(--cor4);
@@ -104,12 +92,17 @@ ol {
     border-radius: 0.2rem;
     background-color: var(--cor7);
     color: var(--cor3);
-    height: 400px;
+    height: 350px;
+
 }
 
 .fonte-nav {
     color: var(--cor3);
     font-weight: 600;
+}
+.fonte-nav:hover {
+    color: var(--cor5);
+
 }
 
 .u-fx {
@@ -143,6 +136,11 @@ ol {
     color: var(--cor3);
 }
 
+.valores-bg {
+    background: var(--cor6);
+    color: var(--cor3);
+}
+
 .btn-lg {
     background-color: var(--cor5);
     color: var(--cor3);
@@ -154,13 +152,13 @@ ol {
 }
 
 .text-hero {
-    color: #1a265a;
+    color: var(--cor4);
 }
 
 /* Hero Section Pagina Atletas*/
 .athlete-hero {
     background: linear-gradient(90deg, var(--cor6) 0% 0%, var(--cor5) 90%);
-    color: var(--light);
+    color: var(--cor3);
     padding: 100px 0;
     color: var(--cor3);
 }
