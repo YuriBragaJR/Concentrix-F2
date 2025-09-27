@@ -102,7 +102,6 @@ ol {
 }
 .fonte-nav:hover {
     color: var(--cor5);
-
 }
 
 .u-fx {
@@ -153,6 +152,21 @@ ol {
 
 .text-hero {
     color: var(--cor4);
+}
+
+.p-msg{
+    font-size: 20px;
+
+}
+
+.p2-msg{ 
+        font-size: 20px;
+
+}
+
+.h1-msg{
+        font-size: 32px;
+
 }
 
 /* Hero Section Pagina Atletas*/
