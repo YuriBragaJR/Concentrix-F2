@@ -31,6 +31,10 @@ A solução desenvolvida consiste em uma plataforma web que destaca esportes inv
 - **Bootstrap**: Utilizado para componentes visuais e responsividade.
 - **Ícones e imagens**: Selecionados para representar a diversidade dos esportes e facilitar o reconhecimento visual.
 
+## Link para o Figma ##
+[Figma Athenos Sports](https://www.figma.com/design/oaT3mw1EpiRccJSZrxP0Tp/Concentrix?node-id=0-1&t=yEwS5CbTI9DN7Fpa-1)
+
+
 ---
 
 Projeto desenvolvido para o Enterprise Challenge, promovido pela Concentrix em parceria com o Google.
