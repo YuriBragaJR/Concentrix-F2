@@ -60,3 +60,15 @@
 
 
 }
+
+@media (max-width: 430px) {
+    .hero {
+        height: 25vh;
+
+    }
+
+     .hero-msg {
+        height: 70vh;
+     }
+
+}
