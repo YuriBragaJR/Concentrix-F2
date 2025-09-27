@@ -1,4 +1,4 @@
-/* Paleta de cores */
+Paleta de cores
 :root {
     --cor1: #d6d6d6;
     --cor2: #121212;
@@ -48,14 +48,14 @@
 
 @media (min-width: 992px) {
     .hero-msg {
-        transform: translateY(-115%);
+        transform: translateY(-110%);
         width: 50%;
+        position: relative;
 
     }
 
-    .hero-msg-space {
-        height: 10px;
-
+    #esportes {
+        transform: translateY(-200px);
     }
 
 
@@ -67,8 +67,8 @@
 
     }
 
-     .hero-msg {
+    .hero-msg {
         height: 70vh;
-     }
+    }
 
 }
